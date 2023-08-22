@@ -4,7 +4,7 @@ def validate_viet_nam_phone_number(phone_number)
 end
 
 def validate_email(email)
-  email_regex = /\A[\w+\-.]+@[a-z\d-]+(\.[a-z]+)\z/
+  email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   email =~ email_regex ? true : false
 end
 
